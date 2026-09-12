@@ -1,0 +1,140 @@
+name: 🚀 Project Idea
+description: Propose a new project for the ISD Lab Project Gallery
+title: "[PROJECT] "
+labels:
+  - idea
+  - under-review
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🚀 ISD Lab Project Proposal
+
+        Thank you for proposing a project for the
+        Intelligent Systems Design Lab Project Gallery.
+
+        Please provide enough information for others to
+        understand your idea and decide whether they would
+        like to work on it.
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Project Name
+      description: Give your project a short and descriptive name.
+      placeholder: "Example: Smart Lab Monitoring System"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Project Description
+      description: Describe what you want to build.
+      placeholder: |
+        Explain your project idea and what the final
+        project should accomplish.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Being Solved
+      description: What problem does this project address?
+      placeholder: "Describe the problem..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How do you think the problem can be solved?
+      placeholder: "Describe your proposed approach..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Domain
+      options:
+        - AI/ML
+        - Robotics
+        - IoT
+        - Web
+        - Mobile
+        - Cybersecurity
+        - Cloud
+        - Data Science
+        - Embedded Systems
+        - Research
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+    validations:
+      required: true
+
+  - type: input
+    id: technologies
+    attributes:
+      label: Suggested Technologies
+      description: Mention languages, frameworks, hardware, or tools.
+      placeholder: "Python, React, ESP32, Raspberry Pi, ROS..."
+
+  - type: input
+    id: duration
+    attributes:
+      label: Expected Duration
+      placeholder: "Example: 6-8 weeks"
+
+  - type: input
+    id: team-size
+    attributes:
+      label: Suggested Team Size
+      placeholder: "Example: 3-4 people"
+
+  - type: textarea
+    id: skills
+    attributes:
+      label: Skills Required
+      placeholder: |
+        Python
+        Machine Learning
+        React
+        Embedded Systems
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Add papers, articles, repositories, or useful links.
+      placeholder: "https://..."
+
+  - type: input
+    id: proposer
+    attributes:
+      label: GitHub Username
+      description: Your GitHub username.
+      placeholder: "@username"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: Contribution
+      options:
+        - label: I am interested in working on this project.
+        - label: I am looking for other contributors.
